@@ -3,16 +3,15 @@
 
 def main():
     """Main Functions"""
-    start_here = 492137954293754252786
-    milliseconds = start_here
+    milliseconds = 492137954293754252786
     seconds = milliseconds // 1000
-    milliseconds = milliseconds % 1000
+    milliseconds %= 1000
     minuets = seconds // 60
-    seconds = seconds % 60
+    seconds %= 60
     hours = minuets // 60
-    minuets = minuets % 60
+    minuets %= 60
     days = hours // 24
-    hours = hours % 24
+    hours %= 24
     print("%d %d %d %d %d" % (days, hours, minuets, seconds, milliseconds))
 
 
