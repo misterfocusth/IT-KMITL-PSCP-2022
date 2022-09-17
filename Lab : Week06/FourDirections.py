@@ -5,56 +5,56 @@ def main():
     """Main Function"""
     directions = input()
     for i in range(len(directions)):
-        line1()
+        print_first_line()
     print()
     for i in range(len(directions)):
-        line2(directions, i)
+        print_second_line(directions, i)
     print()
     for i in range(len(directions)):
-        line3(directions, i)
+        print_third_line(directions, i)
     print()
     for i in range(len(directions)):
-        line4(directions, i)
+        print_fourth_line(directions, i)
     print()
     for i in range(len(directions)):
-        line1()
+        print_first_line()
     print()
 
 
-def line1():
-    """Line1"""
+def print_first_line():
+    """Print first line"""
     print("  *  ", end=" ")
 
 
-def line2(password, index):
-    """Line2"""
-    if password[index] == "U":
+def print_second_line(directions, index):
+    """Print second line"""
+    if directions[index] == "U":
         print(" *** ", end=" ")
-    elif password[index] == "D":
+    elif directions[index] == "D":
         print("  *  ", end=" ")
-    elif password[index] == "L":
+    elif directions[index] == "L":
         print(" *   ", end=" ")
-    elif password[index] == "R":
+    elif directions[index] == "R":
         print("   * ", end=" ")
 
 
-def line3(password, index):
-    """Line3"""
-    if password[index] in "UD":
+def print_third_line(directions, index):
+    """Print third line"""
+    if directions[index] in "UD":
         print("* * *", end=" ")
-    elif password[index] in "LR":
+    elif directions[index] in "LR":
         print("*****", end=" ")
 
 
-def line4(password, index):
-    """Line4"""
-    if password[index] == "U":
+def print_fourth_line(directions, index):
+    """Print fourth line"""
+    if directions[index] == "U":
         print("  *  ", end=" ")
-    elif password[index] == "D":
+    elif directions[index] == "D":
         print(" *** ", end=" ")
-    elif password[index] == "L":
+    elif directions[index] == "L":
         print(" *   ", end=" ")
-    elif password[index] == "R":
+    elif directions[index] == "R":
         print("   * ", end=" ")
 
 
