@@ -9,6 +9,14 @@ def main():
             print(val_y + val_x, end=" ")
         if val_x != (number + 1):
             print()
+            
+    for x in range(1, number + 1, 1):
+        for y in range(1, number + 1, 1):
+            print(x + y, end=" ")
+        if x != (number + 1):
+            print()
 
 
 main()
+
+
